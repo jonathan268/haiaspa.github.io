@@ -1,0 +1,4 @@
+#carouselExampleIndicators img {
+    max-height: 700px;
+    object-fit: cover;
+}
