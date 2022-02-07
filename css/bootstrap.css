@@ -5976,11 +5976,13 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 .carousel-inner::after {
   display: block;
   clear: both;
   content: "";
+  
 }
 
 .carousel-item {
@@ -6021,23 +6023,31 @@ textarea.form-control-lg {
   opacity: 0;
   transition-property: opacity;
   transform: none;
+ 
+
+  
 }
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-start,
 .carousel-fade .carousel-item-prev.carousel-item-end {
   z-index: 1;
-  opacity: 1;
+  opacity: 1;  
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
   transition: opacity 0s 0.6s;
+
+  
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
     transition: none;
+
+    
   }
 }
 
