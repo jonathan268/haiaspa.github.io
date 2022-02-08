@@ -1,3 +1,12 @@
+.navbar-brand {
+    color: #001B4B !important;
+    font-weight: bold;
+}
+.text-black{
+    color: #001B4B !important;
+    font-weight: bold;
+}
+
 .carousel .carousel-caption {
     position: absolute;
     top: -10%;
@@ -8,6 +17,12 @@
     width: 50%;
     padding: 5%;
     padding-left: 10%;
+
+    visibility: hidden;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 
 }
 
@@ -30,6 +45,10 @@ visibility: hidden;
     height: 1px;
    width: 20%;
     background-color: #33bbcf;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 
 }
 
@@ -109,6 +128,7 @@ div {
 
 
 
+
 .zoom {
     animation-duration: 7s;
 
@@ -157,6 +177,7 @@ div {
     }
 
     to {
+        visibility: visible;
         margin-top: 0%;
 
     }
