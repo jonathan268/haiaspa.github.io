@@ -1,18 +1,111 @@
+.carousel .carousel-caption {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    padding-left: 10%;
 
-#carouselExampleDark img{
+}
+
+.carousel-tittle {
+    padding-top: 30%;
+    font-size: xxx-large;
+    color: #001B4B;
+
+
+}
+
+hr {
+visibility: hidden;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-name: slideleft;
+
+
+    border: 3px solid #33bbcf;
+    height: 1px;
+   width: 20%;
+    background-color: #33bbcf;
+
+}
+
+
+
+.btn-outline-primary {
+    border-radius: 200px;
+    border: 3px solid #76D7E6;
+
+    width: 170px;
+    height: 50px;
+    color: #001B4B;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.btn-outline-primary:hover {
+    border: 3px solid #76D7E6;
+
+    background-color: #76D7E6;
+    color: white;
+
+}
+
+
+.carousel-control-next {
+    background-color: rgb(6, 7, 6, .2);
+    width: 40px;
+    height: 130px;
+    margin: auto;
+
+}
+
+.carousel-control-next:hover {
+    background-color: #76D7E6;
+}
+
+.carousel-control-prev {
+    background-color: rgb(6, 7, 6, .3);
+    width: 40px;
+    height: 130px;
+    margin: auto;
+
+}
+
+.carousel-control-prev:hover {
+    background-color: #76D7E6;
+}
+
+.animation-slideup {
+    animation-duration: 2s;
+    animation-name: slideup;
+}
+
+.carousel-text {
+
+
+    color: #ABABAC;
+    font-size: large;
+
+}
+
+#carouselExampleDark img {
     max-height: 700px;
     object-fit: cover;
 }
-.carousel{
+
+.carousel {
     max-height: 700px;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
 div {
     text-align: center;
 }
 
-img {}
 
 
 
@@ -27,13 +120,47 @@ img {}
     -o-transition: 7s ease;
     /* Opera */
     animation-name: zoom;
-    animation-iteration-count:1;
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 
 }
 
 
+
+
+@keyframes appear {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes slideleft {
+    from {
+        width: 0%;
+        margin-left: -10%;
+    }
+
+    to {
+        visibility: visible;
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideup {
+    from {
+        margin-top: 10%;
+    }
+
+    to {
+        margin-top: 0%;
+
+    }
+}
 
 
 @keyframes zoom {
@@ -49,7 +176,7 @@ img {}
         /* IE9 */
 
         transform-origin: left top;
-       
+
     }
 
     to {
@@ -62,9 +189,12 @@ img {}
         /* Opera */
         -ms-transform: scale(1.07);
         /* IE9 */
-        
-       
+
+
 
         /* transform-origin: left center;*/
     }
+
+
+
 }
