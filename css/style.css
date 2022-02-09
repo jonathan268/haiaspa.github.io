@@ -35,10 +35,8 @@
 
 .carousel-tittle {
     padding-top: 30%;
-    font-size: xxx-large;
+    font-size: 3em;
     color: #001B4B;
-
-
 }
 
 hr {
@@ -58,6 +56,10 @@ hr {
     -webkit-animation-fill-mode: forwards;
 
 }
+.carousel-text {
+    color: #ABABAC;
+    font-size: 1.1em;
+}
 
 
 
@@ -68,7 +70,7 @@ hr {
     width: 170px;
     height: 50px;
     color: #001B4B;
-    font-size: medium;
+    font-size: 1em;
     font-weight: normal;
 }
 
@@ -114,23 +116,15 @@ hr {
     animation-name: slideup;
 }
 
-.carousel-text {
 
-
-    color: #ABABAC;
-    font-size: large;
-
-
-
-}
 
 #carouselExampleDark img {
-    max-height: 700px;
+    max-height: 900px;
     object-fit: cover;
 }
 
 .carousel {
-    max-height: 700px;
+    max-height: 900px;
     object-fit: cover;
 }
 .sec1{

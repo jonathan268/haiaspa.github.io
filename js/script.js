@@ -2,7 +2,7 @@ let cont=0;
  var nav = document.querySelector('nav');
 
  window.addEventListener('scroll', function () {
-     if (window.pageYOffset > 300) {
+     if (window.pageYOffset > 70) {
          /*nav.classList.add('bg-dark', 'shadow');*/
          nav.setAttribute("style", "background-color:RGB(242,242,242);");
          //nav.setAttribute("style", "background-color:;");
