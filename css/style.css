@@ -1,4 +1,30 @@
-.navbar-brand {
+/* */
+
+/*navbar styles*/
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    background-color:RGB(242,242,242,.0) !important;
+    
+}
+.navbar img {
+    width: 40px;
+    padding-right: 10px;
+
+}
+#navbarSupportedContent{
+    display: flexbox ;
+   
+}
+
+.space {
+    padding-right: 20px;
+}
+
+/*.navbar-brand {
+    background-color:RGB(242,242,242) !important;
     color: #001B4B !important;
     font-weight: bold;
 }
@@ -13,6 +39,11 @@
     padding-right: 10px;
 
 }
+/*
+
+
+/* carousel styles */
+
 
 .carousel-caption {
     position: absolute;
@@ -33,13 +64,14 @@
 
 }
 
+/* carousel text*/
+
 .carousel-tittle {
     padding-top: 30%;
     font-size: 3em;
     color: #001B4B;
 }
-
-hr {
+.animated-hr {
     visibility: hidden;
     animation-delay: 2s;
     animation-duration: 3s;
@@ -76,15 +108,11 @@ hr {
 
 .btn-outline-primary:hover {
     border: 3px solid #76D7E6;
-
     background-color: #76D7E6;
     color: white;
-
 }
 
-.space {
-    padding-right: 30px;
-}
+
 
 .carousel-control-next {
     background-color: rgb(6, 7, 6, .2);
@@ -110,11 +138,7 @@ hr {
     background-color: #76D7E6;
 }
 
-.animation-slideup {
 
-    animation-duration: 2s;
-    animation-name: slideup;
-}
 
 
 
@@ -127,6 +151,12 @@ hr {
     max-height: 900px;
     object-fit: cover;
 }
+
+
+
+
+/*body*/
+
 .sec1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,6 +192,10 @@ body{
 height: 700px;
 }
 
+
+/*animation*/
+
+
 .zoom {
     animation-duration: 7s;
 
@@ -177,6 +211,11 @@ height: 700px;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 
+}
+.animation-slideup {
+
+    animation-duration: 2s;
+    animation-name: slideup;
 }
 
 
@@ -312,6 +351,12 @@ height: 700px;
     }
 
 }
+
+
+/*-------------------------------------------------------------------footer-------------------------------------*/
+
+
+
 
 /*colores haia 
 #D4E190 verde claro
