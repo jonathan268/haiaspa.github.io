@@ -196,19 +196,29 @@ body{
 	margin:0;
 }
 /* Responsive placing of the boxes*/
-.container {
+.container2 {
 		padding: 1% 1% 0% 1%;
-		background: #ddd;
+		/*background: #ddd;*/
+
+        
 }
-.container:after {
+.container2:after {
 		content: '';
 		display: inline-block;
 		width: 100%;
+
+}
+.container2:after img {
+
+    width: 100%;
+
 }
 
 /* Inside the box */
 
 .box {
+
+    
 		width: 96%;
 		margin:2%;
 		padding-bottom: 96%;
@@ -217,8 +227,12 @@ body{
 		float: left;
 		cursor: pointer;
 		overflow: hidden;
-/*		box-shadow: 0px 3px 18px 1px #fff;*/
+/*box-shadow: 0px 3px 18px 1px #000;*/
+
 		
+}
+.cont{
+    width: 100%;
 }
 
 .box:after {
@@ -234,6 +248,8 @@ body{
 		-ms-transition: all .15s ease-out;
 		-o-transition: all .15s ease-out;
 		transition: all .15s ease-out;
+        
+
 }
 
 .box:hover::after {
@@ -241,7 +257,7 @@ body{
 		opacity:.7;
 }
 
-.container .box .caption {
+.container2 .box .caption {
 		position: absolute;
 		z-index: 60;
 		width: 90%;
@@ -261,6 +277,9 @@ body{
 		font: 1.4em normal Arial, sans-serif;
 		color: #fff;
 		opacity: 0;
+
+        
+
 }
 
 .box:hover .caption {
@@ -277,6 +296,7 @@ body{
 		left: 50%;
 		top: 50%;
 		height: 100%;
+        width: 100%;
 		-webkit-transform: translate(-50%, -50%);
 		-moz-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
@@ -288,15 +308,25 @@ body{
 		-ms-transition: all .15s ease-out;
 		-o-transition: all .15s ease-out;
 		transition: all .15s ease-out;
-}
 
+        
+
+}
+.two{
+    display: block;
+    transition-property: opacity, transform;
+    transition-duration: 5s;
+    animation-duration: 5s;
+}
 .box:hover img {
-	height: 150%;
+	height: 110%;
+    width: 110%;
+    transition-duration: .7s;
 }
 /* media changes, changing number of columns */
 
 @media all and (min-width: 350px){
-  .container .box{
+  .container2 .box{
 		width: 48%;
 		margin:1%;
 		padding-bottom:48%;
@@ -304,18 +334,31 @@ body{
 }
 
 @media all and (min-width: 800px){
-  .container .box{
-		width: 31.3333%;
+  .container2 .box{
+		/*width: 31.3333%;*/
+        width: 45%;
+        height: 400px;
 		padding-bottom:30%;
+        margin: auto;
+
+       
 	}
 }
 @media all and (min-width: 1200px){
-  .container .box{
-		width: 23%;
+  .container2 .box{
+		/*width: 23%;*/
+        width: 31.3333%;
+        height: 400px;
 		padding-bottom:23%;
 	}
 }
-
+@supports(object-fit: cover){
+    .box img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
 
 /*
 .portfolio{
@@ -409,7 +452,7 @@ a {
         width: 50%;
     }
 }
-/*62em*/
+/*62em
 @media screen and (min-width: 62em) {
     .portfolio .portfolio-item {
         width: 33.3333%;

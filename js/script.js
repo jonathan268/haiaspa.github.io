@@ -26,9 +26,14 @@ function show(input) {
         if (element != input && input!='all') {
             var num = document.getElementById(element);
             num.setAttribute("style", "display:none;");
+           
+           
+            
         } else {
             var num = document.getElementById(element);
             num.setAttribute("style", "display:block;");
+  
+            
         }
     }));
 
