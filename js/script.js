@@ -1,9 +1,10 @@
+/*
 let cont = 0;
 var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function () {
     if (window.pageYOffset > 70) {
-        /*nav.classList.add('bg-dark', 'shadow');*/
+        //nav.classList.add('bg-dark', 'shadow');
         nav.setAttribute("style", "background-color:RGB(242,242,242) !important;");
         //nav.setAttribute("style", "background-color:;");
     } else {
@@ -15,37 +16,41 @@ window.addEventListener('scroll', function () {
     }
 
 });
+*/
+
 
 
 
 function show(input) {
-
-    var n = ['one', 'two', 'three'];
+    var n = ['one', 'two'];
     n.forEach((element => {
-
-        if (element != input && input!='all') {
+        if (element != input && input != 'all') {
+            
             var num = document.getElementById(element);
             num.setAttribute("style", "display:none;");
-           
-           
             
+            num.classList.remove("animation-portf"); 
+            void element.offsetWidth;
+            num.classList.remove("animation-portf"); 
+
+
+
         } else {
+
             var num = document.getElementById(element);
             num.setAttribute("style", "display:block;");
-  
-            
+
+            num.classList.remove("animation-portf"); 
+            void element.offsetWidth;
+            num.classList.remove("animation-portf"); 
+         
+          
         }
     }));
 
 
 }
 
-
-
-
-/////////////////
-
-/*
 
 const portfolio = document.querySelector('.portfolio-gallery'),
       portfolioItems = portfolio.querySelectorAll('.portfolio-item'),
@@ -91,7 +96,7 @@ function positionItems(items) {
     let x = 0;
     let itemCount = 0;
     items.forEach((item, i) => {
-        item.style.cssText = `transform: translate3d(${x*(parentWidth/rowItems)}px, ${y*420}px, 0); opacity: 1;`;
+        item.style.cssText = `transform: translate3d(${x*(parentWidth/rowItems)}px, ${y*220}px, 0); opacity: 1;`;
         x++;
         if (x%rowItems == 0) {
             y++;
@@ -111,5 +116,7 @@ window.addEventListener('resize', () => {
 });
 
 
-*/
+
+/////////////////
+
 

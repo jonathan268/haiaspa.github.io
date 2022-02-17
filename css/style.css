@@ -1,21 +1,23 @@
 /* */
 
 /*navbar styles*/
-.navbar{
+.navbar {
     position: fixed;
     top: 0%;
     width: 100%;
     z-index: 1000;
-    background-color:RGB(242,242,242,.0) !important;
-    
+    /*background-color: RGB(242, 242, 242, .0) !important;*/
+
 }
+
 .navbar img {
     padding-right: 10px;
 
 }
-#navbarSupportedContent{
-    display: flexbox ;
-   
+
+#navbarSupportedContent {
+    display: flexbox;
+
 }
 
 .space {
@@ -70,6 +72,7 @@
     font-size: 3em;
     color: #001B4B;
 }
+
 .animated-hr {
     visibility: hidden;
     animation-delay: 2s;
@@ -87,6 +90,7 @@
     -webkit-animation-fill-mode: forwards;
 
 }
+
 .carousel-text {
     color: #ABABAC;
     font-size: 1.1em;
@@ -143,12 +147,12 @@
 
 #carouselExampleDark img {
     max-height: 900px;
-    object-fit: cover;
 }
 
 .carousel {
     max-height: 900px;
-    object-fit: cover;
+    
+
 }
 
 
@@ -156,216 +160,19 @@
 
 /*body*/
 
-.sec1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.text_rigth{
-    text-align: center;
-   
-}
 
-.imgs1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 20%;
-}
-.img1{
-    position: absolute;
-    left: 300px;
-    padding-top: 20px;
-    
-}
 
-.img2{
-    position: absolute;
-    border: 5px;
-}
-
-body{
+body {
     background-color: #F6F7F8;
     margin: auto;
 }
 
 
-.llenado{
-height: 700px;
+.llenado {
+    height: 700px;
 }
 
 /*-----------------------------------portfolio---------------------------------------------------------------*/
-body{
-	margin:0;
-}
-/* Responsive placing of the boxes*/
-.container2 {
-		padding: 1% 1% 0% 1%;
-		/*background: #ddd;*/
-
-        
-}
-.container2:after {
-		content: '';
-		display: inline-block;
-		width: 100%;
-
-}
-.container2:after img {
-
-    width: 100%;
-
-}
-
-/* Inside the box */
-
-.box {
-
-    
-		width: 96%;
-		margin:2%;
-		padding-bottom: 96%;
-		height: 0;
-		position: relative;
-		float: left;
-		cursor: pointer;
-		overflow: hidden;
-/*box-shadow: 0px 3px 18px 1px #000;*/
-
-		
-}
-.cont{
-    width: 100%;
-}
-
-.box:after {
-		content: '';
-		position: absolute;
-		background-color: #000;
-		opacity:0;
-		z-index: 55;
-		width: 100%;
-		height: 100%;
-		-webkit-transition: all .15s ease-out;
-		-moz-transition: all .15s ease-out;
-		-ms-transition: all .15s ease-out;
-		-o-transition: all .15s ease-out;
-		transition: all .15s ease-out;
-        
-
-}
-
-.box:hover::after {
-		background-color: #000;
-		opacity:.7;
-}
-
-.container2 .box .caption {
-		position: absolute;
-		z-index: 60;
-		width: 90%;
-		margin-left: 5%;
-		top: 50%;
-		-webkit-transform: scale(3);
-		-moz-transform: scale(3);
-		-ms-transform: scale(3);
-		-o-transform: scale(3);
-		transform: scale(3);
-		text-align: center;
-		-webkit-transition: all .15s ease-out;
-		-moz-transition: all .15s ease-out;
-		-ms-transition: all .15s ease-out;
-		-o-transition: all .15s ease-out;
-		transition: all .15s ease-out;
-		font: 1.4em normal Arial, sans-serif;
-		color: #fff;
-		opacity: 0;
-
-        
-
-}
-
-.box:hover .caption {
-		-webkit-transform: scale(1) translate(0%, -50%);
-		-moz-transform: scale(1) translate(0%, -50%);
-		-ms-transform: scale(1) translate(0%, -50%);
-		-o-transform: scale(1) translate(0%, -50%);
-		transform: scale(1) translate(0%, -50%);
-		opacity: 1;
-}
-
-.box img {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		height: 100%;
-        width: 100%;
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		z-index: 50;
-		-webkit-transition: all .15s ease-out;
-		-moz-transition: all .15s ease-out;
-		-ms-transition: all .15s ease-out;
-		-o-transition: all .15s ease-out;
-		transition: all .15s ease-out;
-
-        
-
-}
-.two{
-    display: block;
-    transition-property: opacity, transform;
-    transition-duration: 5s;
-    animation-duration: 5s;
-}
-.box:hover img {
-	height: 110%;
-    width: 110%;
-    transition-duration: .7s;
-}
-/* media changes, changing number of columns */
-
-@media all and (min-width: 350px){
-  .container2 .box{
-		width: 48%;
-		margin:1%;
-		padding-bottom:48%;
-	}
-}
-
-@media all and (min-width: 800px){
-  .container2 .box{
-		/*width: 31.3333%;*/
-        width: 45%;
-        height: 400px;
-		padding-bottom:30%;
-        margin: auto;
-
-       
-	}
-}
-@media all and (min-width: 1200px){
-  .container2 .box{
-		/*width: 23%;*/
-        width: 31.3333%;
-        height: 400px;
-		padding-bottom:23%;
-	}
-}
-@supports(object-fit: cover){
-    .box img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-}
-
-/*
-.portfolio{
-    margin-top: 200px;
-}
-
 
 * {
     box-sizing: border-box;
@@ -391,14 +198,15 @@ a {
     color: inherit;
 }
 
-.portfolio img {
+img {
     max-width: 100%;
-    
 }
 
 .section {
     padding: var(--padding-v) var(--padding-h);
-    
+}
+.portfolio{
+    min-height: 700px;
 }
 
 .portfolio .portfolio-cats {
@@ -407,28 +215,29 @@ a {
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-
 }
 
 .portfolio .portfolio-cats li {
+    /*background-color: #000;color: #fff;*/
+    background-color: rgb(0 0 0, .0);
     color: #001B4B;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    font-size: 1em;
+
     font-weight: bold;
 }
-.portfolio .portfolio-cats li:hover{
-    color: #76D7E6;
+
+.portfolio .portfolio-cats li:hover {
+    color: #33bbcf;
 }
 
 .portfolio .portfolio-gallery {
     position: relative;
-    
 }
 
 .portfolio .portfolio-item {
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
@@ -437,9 +246,6 @@ a {
     left: 0;
     transition-property: opacity, transform;
     transition-duration: 0.7s;
-    
-
-
 }
 
 .portfolio .portfolio-item .item-inner {
@@ -453,13 +259,128 @@ a {
         width: 50%;
     }
 }
-/*62em
+
 @media screen and (min-width: 62em) {
     .portfolio .portfolio-item {
         width: 33.3333%;
     }
 }
-*/
+
+/*------------------------------dual_box-------------------------------------*/
+.dual-box {
+    display: flex;
+    text-align: center;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.first-box {
+    width: 50%;
+}
+.first-box video{
+    width: 100%;
+}
+video::-webkit-media-controls {
+    display: none;
+}
+.second-box {
+
+    width: 50%;
+    padding: 3%;
+  
+
+}
+
+.text-tittle {
+    color: #001B4B;
+    font-size: 3em;
+}
+
+.text {
+    color: #ABABAC;
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width:1200px) {
+    .text-tittle {
+        font-size: 2.5em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+   
+    .dual-box {
+        flex-direction: column;
+        align-self: center;
+    }
+    .first-box {
+        margin: auto;
+        width: 100%;
+
+    }
+    
+    .second-box {
+    
+        margin: auto;
+        width: 100%;
+    
+    }
+    .text-tittle {
+        font-size: 3em;
+    }
+
+    .text {
+        font-size: 1.2em;
+    }
+
+
+}
+
+/*services*/
+/*--------------------------------------------------------------------------------------------------*/
+.services{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    
+}
+.text-services{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+    
+}
+.tittle-services{
+    color: #001B4B;
+    font-size: 1.5em;
+
+}
+.text-services{
+    color: #ABABAC;
+    font-size: 1em;
+}
+.grid{
+  
+    display: inline-flex;
+    flex-wrap: wrap;
+
+
+}
+.grid-element{
+    padding: 3%;
+    width: 30%;
+    height: 300px;
+
+}
+
 /*animation*/
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -481,11 +402,17 @@ a {
     -webkit-animation-fill-mode: forwards;
 
 }
+
 .animation-slideup {
 
     animation-duration: 2s;
     animation-name: slideup;
 }
+
+
+
+
+
 
 
 
@@ -583,7 +510,7 @@ a {
 
     }
 
-   
+
 
 }
 
@@ -618,7 +545,7 @@ a {
         display: none;
     }
 
-    .carousel{
+    .carousel {
         width: 100%;
     }
 
@@ -628,7 +555,7 @@ a {
 /*-------------------------------------------------------------------footer-------------------------------------*/
 
 
-
+/*-- footer --*/
 
 /*colores haia 
 #D4E190 verde claro
