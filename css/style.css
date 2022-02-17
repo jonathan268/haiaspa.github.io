@@ -1,6 +1,9 @@
 /* */
 
 /*navbar styles*/
+
+
+
 .navbar {
     position: fixed;
     top: 0%;
@@ -8,7 +11,10 @@
     z-index: 1000;
     /*background-color: RGB(242, 242, 242, .0) !important;*/
 
+
 }
+
+
 
 .navbar img {
     padding-right: 10px;
@@ -19,6 +25,8 @@
     display: flexbox;
 
 }
+
+
 
 .space {
     padding-right: 20px;
@@ -45,6 +53,22 @@
 
 /* carousel styles */
 
+#carouselExampleDark {
+    padding-top: 70px;
+    
+
+}
+#carouselExampleDark img{
+    /*min-height: 300px;
+    max-height: 900px;*/
+
+    height: 80vh;
+    max-height: 1000px;
+    min-height: 300px;
+    object-fit: cover;
+    
+
+}
 
 .carousel-caption {
     position: absolute;
@@ -145,14 +169,16 @@
 
 
 
-#carouselExampleDark img {
-    max-height: 900px;
-}
 
-.carousel {
-    max-height: 900px;
-    
 
+
+@media screen and (max-width:800px) {
+
+
+    .carousel {
+        max-height: 900px;
+        min-height: 400px;
+    }
 }
 
 
@@ -205,7 +231,8 @@ img {
 .section {
     padding: var(--padding-v) var(--padding-h);
 }
-.portfolio{
+
+.portfolio {
     min-height: 700px;
 }
 
@@ -278,17 +305,20 @@ img {
 .first-box {
     width: 50%;
 }
-.first-box video{
+
+.first-box video {
     width: 100%;
 }
+
 video::-webkit-media-controls {
     display: none;
 }
+
 .second-box {
 
     width: 50%;
     padding: 3%;
-  
+
 
 }
 
@@ -315,23 +345,25 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width:1000px) {
-   
+
     .dual-box {
         flex-direction: column;
         align-self: center;
     }
+
     .first-box {
         margin: auto;
         width: 100%;
 
     }
-    
+
     .second-box {
-    
+
         margin: auto;
         width: 100%;
-    
+
     }
+
     .text-tittle {
         font-size: 3em;
     }
@@ -345,36 +377,41 @@ video::-webkit-media-controls {
 
 /*services*/
 /*--------------------------------------------------------------------------------------------------*/
-.services{
+.services {
     background-color: #fff;
     width: 80%;
     margin: auto;
     padding-top: 5%;
-    
+
 }
-.text-services{
+
+.text-services {
     margin: auto;
     text-align: center;
     padding-bottom: 3%;
-    
+
 }
-.tittle-services{
+
+.tittle-services {
     color: #001B4B;
     font-size: 1.5em;
 
 }
-.text-services{
+
+.text-services {
     color: #ABABAC;
     font-size: 1em;
 }
-.grid{
-  
+
+.grid {
+
     display: inline-flex;
     flex-wrap: wrap;
 
 
 }
-.grid-element{
+
+.grid-element {
     padding: 3%;
     width: 30%;
     height: 300px;
@@ -515,23 +552,18 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width:800px) {
-    .carousel-tittle {
-        font-size: large;
-    }
+ 
 
+    .carousel img{
+       
+    }
     .carousel-text {
         visibility: hidden;
         height: 0%;
 
     }
 
-    .btn-outline-primary {
 
-
-        width: 130px;
-        height: 40px;
-        font-size: small;
-    }
 
     .carousel-control-prev {
         display: none;

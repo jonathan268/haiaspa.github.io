@@ -21,17 +21,33 @@ window.addEventListener('scroll', function () {
 
 
 
+window.onscroll = function () {
+    var nav = document.querySelector('nav');
+    var y = window.scrollY;
+    if (y == 0) {
+        console.log(y);
+        nav.style.height='70px';
+        
+
+        
+    }else{
+        nav.style.height='54px';
+    }
+    
+};
+
+
 function show(input) {
     var n = ['one', 'two'];
     n.forEach((element => {
         if (element != input && input != 'all') {
-            
+
             var num = document.getElementById(element);
             num.setAttribute("style", "display:none;");
-            
-            num.classList.remove("animation-portf"); 
+
+            num.classList.remove("animation-portf");
             void element.offsetWidth;
-            num.classList.remove("animation-portf"); 
+            num.classList.remove("animation-portf");
 
 
 
@@ -40,11 +56,11 @@ function show(input) {
             var num = document.getElementById(element);
             num.setAttribute("style", "display:block;");
 
-            num.classList.remove("animation-portf"); 
+            num.classList.remove("animation-portf");
             void element.offsetWidth;
-            num.classList.remove("animation-portf"); 
-         
-          
+            num.classList.remove("animation-portf");
+
+
         }
     }));
 
@@ -53,13 +69,13 @@ function show(input) {
 
 
 const portfolio = document.querySelector('.portfolio-gallery'),
-      portfolioItems = portfolio.querySelectorAll('.portfolio-item'),
-      portfolioCats = document.querySelectorAll('.portfolio-cats > li');
+    portfolioItems = portfolio.querySelectorAll('.portfolio-item'),
+    portfolioCats = document.querySelectorAll('.portfolio-cats > li');
 let parentWidth = portfolio.offsetWidth,
     windowWidth = window.innerWidth;
 
 portfolioCats.forEach(cat => {
-    cat.addEventListener('pointerdown', function() {
+    cat.addEventListener('pointerdown', function () {
         const dataFilter = this.dataset.filter;
         const el = [];
 
@@ -96,15 +112,15 @@ function positionItems(items) {
     let x = 0;
     let itemCount = 0;
     items.forEach((item, i) => {
-        item.style.cssText = `transform: translate3d(${x*(parentWidth/rowItems)}px, ${y*220}px, 0); opacity: 1;`;
+        item.style.cssText = `transform: translate3d(${x * (parentWidth / rowItems)}px, ${y * 220}px, 0); opacity: 1;`;
         x++;
-        if (x%rowItems == 0) {
+        if (x % rowItems == 0) {
             y++;
             x = 0;
         }
         itemCount = i;
     });
-    portfolio.style.height = `${Math.ceil(itemCount/rowItems)*220}px`;
+    portfolio.style.height = `${Math.ceil(itemCount / rowItems) * 220}px`;
 }
 
 positionItems(portfolioItems);
