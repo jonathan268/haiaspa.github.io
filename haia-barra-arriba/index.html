@@ -33,8 +33,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg navbar-transparent" id="navbar">
-        <div class="container-fluid navbar-transparent" id="container-fluid">
+    <nav class="navbar navbar-light  navbar-transparent" id="navbar">
+        <div class="container-fluid navbar-transparent navbar-expand-lg " id="container-fluid">
             <a href="index.html" class="logo"><img src="icons/logo55.png" alt="" class="img-fluid "></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -898,20 +898,27 @@
 
 
     <script type="text/javascript">
+        
         var nav = document.querySelector('nav');
         var nav2 = document.getElementById('container-fluid');
 
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
-                nav.classList.remove('navbar-transparent', 'shadow');
-                nav2.classList.remove('navbar-transparent');
+                //navbar-expand-lg bg-light shadow-lg
+                nav.classList.remove('navbar-transparent');
                 nav.classList.add('shadow-lg', 'shadow');
+
+                nav2.classList.remove('navbar-transparent');
+                
 
             } else {
 
                 nav.classList.add('navbar-transparent', 'shadow');
-                nav2.classList.add('navbar-transparent');
                 nav.classList.remove('shadow-lg', 'shadow');
+
+                nav2.classList.add('navbar-transparent');
+
+                
             }
         });
     </script>

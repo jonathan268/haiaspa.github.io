@@ -347,7 +347,7 @@ strong {
 
 
 .navbar {
-  min-height: 70px;
+  min-height: 80px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: RGB(242, 242, 242, .9) !important;
@@ -355,6 +355,7 @@ strong {
   max-height: 70px;
   color: #001B4B !important;
   font-weight: 600;
+
 
 }
 
@@ -691,6 +692,10 @@ strong {
 }
 
 @media screen and (max-width: 991px) {
+ 
+  .navbar{
+    min-height: 82px;
+  }
   h1 {
     font-size: 48px;
   }
