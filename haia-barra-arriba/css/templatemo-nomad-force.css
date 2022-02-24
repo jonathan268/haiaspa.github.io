@@ -357,7 +357,8 @@ strong {
   font-weight: 600;
 
 }
-.navbar-transparent{
+
+.navbar-transparent {
   background-color: RGB(242, 242, 242, 0) !important;
 }
 
@@ -739,6 +740,7 @@ strong {
     margin-bottom: 38px;
   }
 
+  
 
 
 }
@@ -752,11 +754,7 @@ strong {
     width: 100%;
   }
 
-  .carousel-item img {
-    
-    
-    
-  }
+  .carousel-item img {}
 
   .logo img {
     height: 60px;

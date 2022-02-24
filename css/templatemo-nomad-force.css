@@ -735,7 +735,13 @@ strong {
   .news .col-12 .news-two-column:first-child {
     margin-bottom: 38px;
   }
-
+.container-fluid{
+  background-color: RGB(242, 242, 242, .9) !important;
+  
+}
+.navbar{
+  min-height: 82px;
+}
 
 
 }
