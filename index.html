@@ -982,22 +982,23 @@
 
             var petal = document.getElementsByClassName('petal-r');
             var posPetal = petal[0].getBoundingClientRect().top;
+            var posPetal2 = petal[4].getBoundingClientRect().bottom;
             var petalr = document.getElementsByClassName('petal-r');
             var petall = document.getElementsByClassName('petal-l');
             var shadow = document.getElementsByClassName('shadow');
             //console.log(posPetal);
             let screenSize = window.innerHeight / 7;
-            //console.log(posPetal);
+            console.log(posPetal2);
 
             if (posPetal > 0 && posPetal < 770) {
-                shadow[0].style.animationDuration = '7s';
+                shadow[0].style.animationDuration = '10s';
                 shadow[0].style.animationName = 'shadow-animation';
 
                 for (let i = 0; i < 3; i++) {
-                    petalr[i].style.animationDuration = '7s';
+                    petalr[i].style.animationDuration = '10s';
                     petalr[i].style.animationName = 'flower';
 
-                    petall[i].style.animationDuration = '7s';
+                    petall[i].style.animationDuration = '10s';
                     petall[i].style.animationName = 'flower';
                 }
 
@@ -1015,15 +1016,15 @@
                 shadow[0].offsetHeight;
                 shadow[0].style.animation = null;
             }
-            if (posPetal < -7450) {
+            if (posPetal2 < 700 && posPetal2 > 100) {
                 for (let i = 3; i < 6; i++) {
-                    petalr[i].style.animationDuration = '7s';
+                    petalr[i].style.animationDuration = '10s';
                     petalr[i].style.animationName = 'flower';
 
-                    petall[i].style.animationDuration = '7s';
+                    petall[i].style.animationDuration = '10s';
                     petall[i].style.animationName = 'flower';
                 }
-                shadow[1].style.animationDuration = '7s';
+                shadow[1].style.animationDuration = '10s';
                 shadow[1].style.animationName = 'shadow-animation';
             }else {
                 for (let i = 3; i < 6; i++) {
