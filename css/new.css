@@ -16,12 +16,10 @@
   /*min-height: 300px;
   max-height: 900px;*/
 
-  height: 85vh;
+  height: 100vh;
   max-height: 1000px;
   min-height: 300px;
   object-fit: cover;
-
-
 
 
 }
@@ -30,27 +28,27 @@
   /*display: inline-flex;
   flex-direction: column;
   justify-content: center;*/
-  align-items: center;
+  height: 100vh;
   position: absolute;
-  left: 0%;
   z-index: 10;
-  color: #fff;
   text-align: center;
   width: 50%;
   padding: 5%;
   padding-left: 10%;
 
-  padding-top: 14%;
 
 
 
   justify-content: center;
+
+
 }
+
 
 /* carousel text*/
 
 .carousel-tittle {
-  /*padding-top: 30%;*/
+  padding-top: 30%;
 
   font-size: 3em;
   color: #001B4B;
@@ -89,6 +87,7 @@
 }
 
 .carousel-text {
+  
   color: #ABABAC;
   font-size: 1.1em;
 
@@ -166,6 +165,7 @@
   min-height: 400px;
   position: relative;
   overflow: hidden;
+  top: -70px;
 }
 
 
@@ -208,6 +208,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -360,12 +361,12 @@
 
 
 
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;
+background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;
+   /* background: linear-gradient(rgba(74, 103, 30, 0.9), rgba(74, 103, 30, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;*/
   background-size: cover;
   padding: 120px 0;
 }
@@ -693,6 +694,8 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #37517e;
+
+
 }
 
 .section-title h2::before {
@@ -822,4 +825,39 @@ section {
 
 .services .icon-box:hover h4 a {
   color: #47b2e4;
+}
+
+@font-face {
+  font-family: JennaSue;
+  src: url(../fonts/JennaSue.ttf);
+}
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../fonts/CenturyGothic.ttf);
+}
+#haia{
+  font-family: CenturyGothic;
+  padding: 0% ;
+  color: #4A671E;
+  margin: -15px;
+  margin-top: -35px;
+}
+#spa{
+  font-family: JennaSue;
+  padding-left: 70px;
+  padding-top: 0%;
+  color: #F18950;
+  margin: 0%;
+}
+/*
+#DDE59C
+#4A671E
+#F18950
+
+*/
+
+.haia-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
