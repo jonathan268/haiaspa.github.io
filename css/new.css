@@ -7,6 +7,8 @@
 
 
 
+
+
 /*--------------------------------------------------------------
 # carousel
 --------------------------------------------------------------*/
@@ -20,6 +22,15 @@
   max-height: 1000px;
   min-height: 300px;
   object-fit: cover;
+
+
+
+  max-height: 900px;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  top: -70px;
+
 
 
 }
@@ -38,7 +49,6 @@
 
 
 
-
   justify-content: center;
 
 
@@ -51,8 +61,10 @@
   padding-top: 30%;
 
   font-size: 3em;
-  color: #001B4B;
-  font-family: "Poppins", sans-serif;
+  
+
+  
+
   font-weight: 600;
 
   animation-duration: 3s;
@@ -74,10 +86,12 @@
   animation-name: slideleft;
 
 
-  border: 3px solid #33bbcf;
+ /* border: 3px solid #33bbcf;*/
+  border: 3px solid #F18950;
   height: 1px;
   width: 110px;
-  background-color: #33bbcf;
+  /*background-color: #33bbcf;*/
+  background-color: #F18950;
 
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -87,10 +101,10 @@
 }
 
 .carousel-text {
-  
+
   color: #ABABAC;
   font-size: 1.1em;
-
+  /*font-family: 'Libre Baskerville', serif;*/
   animation-delay: .5s;
   animation-duration: 3s;
   animation-name: slideup;
@@ -111,7 +125,9 @@
 
   width: 170px;
   height: 50px;
-  color: #001B4B;
+
+
+
   font-size: 1em;
   font-weight: normal;
 
@@ -139,7 +155,7 @@
   width: 40px;
   height: 130px;
   margin: auto;*/
-  
+
 
 }
 
@@ -158,17 +174,17 @@
 }
 
 .carousel-control-prev:hover {
- /* background-color: #76D7E6;*/
+  /* background-color: #76D7E6;*/
 }
 
 
 
 .carousel {
-  max-height: 900px;
+ /* max-height: 900px;
   min-height: 400px;
   position: relative;
   overflow: hidden;
-  top: -70px;
+  top: -70px;*/
 }
 
 
@@ -223,7 +239,7 @@
   .carousel-text {
     font-size: .9em;
   }
-  
+
 }
 
 @media (max-height: 450px) {
@@ -368,8 +384,8 @@
 # Cta
 --------------------------------------------------------------*/
 .cta {
-background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;
-   /* background: linear-gradient(rgba(74, 103, 30, 0.9), rgba(74, 103, 30, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;*/
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;
+  /* background: linear-gradient(rgba(74, 103, 30, 0.9), rgba(74, 103, 30, 0.9)), url("../images/haia\ \(4\).jpg") fixed center center;*/
   background-size: cover;
   padding: 120px 0;
 }
@@ -385,7 +401,7 @@ background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("
 }
 
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
+  
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -400,6 +416,7 @@ background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("
 
 .cta .cta-btn:hover {
   background: #47b2e4;
+
   border: 2px solid #47b2e4;
 }
 
@@ -436,7 +453,6 @@ background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -608,7 +624,8 @@ background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+
+
 }
 
 .team .member span {
@@ -654,13 +671,14 @@ background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("
 }
 
 .team .member .social a i {
-  color: #37517e;
+
+
   font-size: 16px;
   margin: 0 2px;
 }
 
 .team .member .social a:hover {
-  background: #47b2e4;
+  background: #4ce447;
 }
 
 .team .member .social a:hover i {
@@ -696,11 +714,13 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+
+
 
 
 }
 
+/*barra debajo de títulos*/
 .section-title h2::before {
   content: '';
   position: absolute;
@@ -708,17 +728,20 @@ section {
   width: 120px;
   height: 1px;
   background: #ddd;
+  background: F18950;
   bottom: 1px;
   left: calc(50% - 60px);
 }
-
+/*barra debajo de títulos*/
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  /*background: #47b2e4;*/
+  background-color: #F18950;
+
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -750,8 +773,8 @@ section {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
   margin: auto;
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 
 }
 
@@ -762,7 +785,7 @@ section {
 
 @media screen and (max-width:1000px) {
   .map-container {
-    align-content: center ;
+    align-content: center;
     margin: auto;
     width: 90%;
     flex-direction: column;
@@ -771,10 +794,10 @@ section {
   }
 
   .map {
-    width: 100% ;
+    width: 100%;
     height: 100px;
     padding-left: 10%;
-    
+
 
   }
 }
@@ -817,7 +840,8 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #37517e;
+
+
   transition: ease-in-out 0.3s;
 }
 
@@ -839,24 +863,36 @@ section {
   font-family: JennaSue;
   src: url(../fonts/JennaSue.ttf);
 }
+
 @font-face {
   font-family: CenturyGothic;
   src: url(../fonts/CenturyGothic.ttf);
 }
-#haia{
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Lora-Italic-VariableFont_wght.ttf);
+}
+
+#haia {
   font-family: CenturyGothic;
-  padding: 0% ;
-  color: #4A671E;
+  padding: 0%;
+  color: #4A671E !important;
   margin: -15px;
   margin-top: -35px;
 }
-#spa{
+
+#spa {
   font-family: JennaSue;
   padding-left: 70px;
   padding-top: 0%;
-  color: #F18950;
+  color: #F18950 !important;
   margin: 0%;
 }
+
 /*
 #DDE59C
 #4A671E
@@ -864,13 +900,14 @@ section {
 
 */
 
-.haia-footer{
+.haia-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer a:hover{
-  color: #76D7E6 !important;
+
+footer a:hover {
+  color: #76D7E6 ;
 }
 
 /***********************************************************************************************/
@@ -885,7 +922,6 @@ footer a:hover{
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
   background-color: #fef8f8;
 }
 
@@ -901,13 +937,13 @@ body {
 .card {
   position: relative;
   display: block;
-  height: 100%;  
+  height: 100%;
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
 }
 
-.card__image {      
+.card__image {
   width: 100%;
   height: auto;
 }
@@ -917,9 +953,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;      
-  border-radius: calc(var(--curve) * 1px);    
-  background-color: var(--surface-color);      
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
   transform: translateY(100%);
   transition: .2s ease-in-out;
 }
@@ -934,7 +970,7 @@ body {
   align-items: center;
   gap: 2em;
   padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
   background-color: var(--surface-color);
   transform: translateY(-100%);
   transition: .2s ease-in-out;
@@ -945,14 +981,14 @@ body {
   height: 80px;
   position: absolute;
   bottom: 100%;
-  right: 0;      
+  right: 0;
   z-index: 1;
 }
 
 .card__arc path {
   fill: var(--surface-color);
   d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}       
+}
 
 .card:hover .card__header {
   transform: translateY(0);
@@ -961,8 +997,8 @@ body {
 .card__thumb {
   flex-shrink: 0;
   width: 50px;
-  height: 50px;      
-  border-radius: 50%;      
+  height: 50px;
+  border-radius: 50%;
 }
 
 .card__title {
@@ -974,9 +1010,8 @@ body {
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "MockFlowFont";  
-  font-size: .8em; 
-  color: #D7BDCA;  
+  font-size: .8em;
+  color: #D7BDCA;
 }
 
 .card__status {
@@ -988,9 +1023,182 @@ body {
   padding: 0 2em 2em;
   margin: 0;
   color: #D7BDCA;
-  font-family: "MockFlowFont";   
+  /*font-family: "MockFlowFont";*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}    
+}
+
+/*********************/
+
+/* 
+* Design by Robert Mayer:https://goo.gl/CJ7yC8
+*
+*I intentionally left out the line that was supposed to be below the subheader simply because I don't like how it looks.
+*
+* Chronicle Display Roman font was substituted for similar fonts from Google Fonts.
+*/
+
+body {
+  background-color: #fdf1ec;
+}
+
+.wrapper {
+  height: 370px;
+  width: 277px;
+  /* margin: 50px auto;*/
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  
+}
+.wrapper2 {
+  height: 370px;
+  width: 277px;
+  /* margin: 50px auto;*/
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  
+}
+#carouselExampleInterval{
+  
+}
+.cot {
+  margin: auto;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.cartas{
+  width: 90%;
+  margin: auto;
+  display: inline-flex;
+}
+
+.product-img {
+ /* float: left;*/
+  height: 370px;
+  width: 277px;
+  
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 370px;
+  width: 277px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+
+}
+
+.product-text {
+  height: 230px;
+  width: 257px;
+ 
+}
+
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 32px;
+  font-size: 30px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  /*font-family: 'Bentham', serif;*/
+}
+
+.product-text h2 {
+  margin: 0 0 40px 38px;
+  font-size: 13px;
+ /* font-family: 'Raleway', sans-serif;*/
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 20px;
+  /*font-family: 'Playfair Display', serif;*/
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 83px;
+  width: 307px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 30px;
+  /*font-family: 'Trocchi', serif;*/
+  margin: 0 0 0 20px;
+  font-size: 23px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  /*font-family: 'Suranna', serif;*/
+  font-size: 25px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  margin: -15px 50px 0 1px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: row;
+  padding: 10% 0 10% 0;
+}
+
+
